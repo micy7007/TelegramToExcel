@@ -52,3 +52,12 @@ EXCEL_SHEET_NAME is the name of the sheet inside the excel (You shouldn't need t
 REVERSE_ORDER, when "True" the output is reversed (First line goes last, and last line goes First)
 
 > NOTE: When REVERSE_ORDER is "False" the output most recent message at the start and the oldest message at the end.
+>
+> ## 🇰🇷 프로젝트 소개
+- 텔레그램 채널/그룹 메시지를 수집해 **Excel 리포트**(Report.xlsx) 자동 생성
+- 사용 기술: Python 3, Telethon, pandas, openpyxl
+- 주요 기능: 날짜·메시지 수 필터, 시트 역순/정순 저장, EXE 빌드 예시 포함
+## 실행 방법
+1. `pip install -r requirements.txt`
+2. `config.py`에 `API_ID`, `API_HASH`, `CHAT_ID` 입력
+3. `python main.py` 실행 → `Report.xlsx` 생성
